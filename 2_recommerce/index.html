@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Nunito Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Recommerce-API Design</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- HEADER START -->
+    <header id="header" class="header">
+      <nav class="header__mainnav">
+        <!-- Logo -->
+        <a href="#" class="header__logo">Bookz</a>
+        <!-- Search Form -->
+        <form class="header__form">
+          <input type="text" class="header__search" name="search" id="header__search">
+          <button class="header__search-button" type="submit">
+            <svg class="header__search-icon">
+              <use xlink:href="./svg/feather-sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <!-- Main Menus -->
+        <ul class="header__nav-items">
+          <li class="nav-item">
+            <a href="#">
+              <svg class="nav-item-icon">
+                <use xlink:href="./svg/feather-sprite.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <svg class="nav-item-icon">
+                <use xlink:href="./svg/feather-sprite.svg#shopping-bag"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <svg class="nav-item-icon">
+                <use xlink:href="./svg/feather-sprite.svg#globe"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Bestseller</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Find Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HERO START -->
+    <section id="hero">
+      <div class="hero__textbox">
+        <h1>Explore the Bookz</h1>
+        <p>
+          Start picking from the range of books from our library. 30 day money-back guaranteed
+        </p>
+        <a href="#">View All</a>
+      </div>
+
+      <div class="hero__image">
+        <img src="./img/hero.png" alt="Hero" class="img">
+      </div>
+    </section>
+    <!-- HERO END -->
+  </div>
+</body>
+</html>

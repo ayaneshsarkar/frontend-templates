@@ -10,11 +10,14 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    // grid-template-rows: 27.5rem;
     grid-gap: 2rem;
     max-width: 114rem;
     margin: 0 auto !important;
-    //min-height: 100vh;
+
+    @media only screen and (max-width: 1140px) {
+      max-width: 114rem;
+      padding: 0 2rem;
+    }
 
     @media only screen and (max-width: $xlBreak) {
       max-width: 114rem;
@@ -22,18 +25,22 @@ body {
 
     @media only screen and (max-width: $lgBreak) {
       max-width: 96rem;
+      padding: 0 2rem;
     }
 
     @media only screen and (max-width: $mdBreak) {
       max-width: 72rem;
+      padding: 0 2rem;
     }
 
     @media only screen and (max-width: $smBreak) {
       max-width: 54rem;
+      padding: 0 2rem;
     }
 
     @media only screen and (max-width: $smBreak - 1) {
       width: 100%;
+      padding: 0 2rem;
     }
   }
 }
@@ -42,7 +49,7 @@ body {
 #header {
   height: 15rem;
   grid-column: 1 / -1;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .header {

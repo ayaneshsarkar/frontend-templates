@@ -14,8 +14,6 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0"
   },
-  "dependencies": {
-    "feather-icons": "^4.28.0"
-  },
+  "dependencies": {},
   "browserslist": "last 99 versions"
 }

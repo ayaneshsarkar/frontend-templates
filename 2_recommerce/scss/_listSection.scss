@@ -1,0 +1,45 @@
+.popular {
+  grid-column: 1 / -1;
+  margin-bottom: $sectionBreak-md;
+}
+
+.featured {
+  grid-column: 1 / -1;
+  margin-bottom: $sectionBreak;
+}
+
+.list__title {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.list__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  &-item {
+    height: auto;
+
+    &--img {
+      height: 25rem;
+      border-radius: 1rem;
+      background-image: linear-gradient(to right bottom, $lightTheme, $lighterTheme);
+      margin-bottom: 1.5rem;
+    }
+
+    &--title {
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    &--author {
+      color: $greyText;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+  }
+}

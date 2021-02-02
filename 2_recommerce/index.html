@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Nunito Font -->
+  <!-- NUNITO FONT -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="css/app.css">
   <title>Recommerce-API Design</title>
 </head>
 <body>
-  <div class="wrapper">
+  <main class="wrapper">
     <!-- HEADER START -->
     <header id="header" class="header">
       <nav class="header__mainnav">
@@ -176,6 +177,135 @@
       </div>
     </section>
     <!-- FEATURED END -->
+  </main>
+
+  <div class="full-wrapper">
+    <!-- PREMIUM START -->
+    <section id="premium" class="premium">
+      <h1 class="primaryHeading">Premium Books</h1>
+      <div class="list__box">
+        <div class="list__box-item">
+          <div class="list__box-item--img"></div>
+          <div class="list__box-item--title">The Witcher</div>
+          <div class="list__box-item--author">Andrez Sapkowski</div>
+        </div>
+        <div class="list__box-item">
+          <div class="list__box-item--img"></div>
+          <div class="list__box-item--title">The Witcher</div>
+          <div class="list__box-item--author">Andrez Sapkowski</div>
+        </div>
+        <div class="list__box-item">
+          <div class="list__box-item--img"></div>
+          <div class="list__box-item--title">The Witcher</div>
+          <div class="list__box-item--author">Andrez Sapkowski</div>
+        </div>
+        <div class="list__box-item">
+          <div class="list__box-item--img"></div>
+          <div class="list__box-item--title">The Witcher</div>
+          <div class="list__box-item--author">Andrez Sapkowski</div>
+        </div>
+        <div class="list__box-item">
+          <div class="list__box-item--img"></div>
+          <div class="list__box-item--title">The Witcher</div>
+          <div class="list__box-item--author">Andrez Sapkowski</div>
+        </div>
+        <div class="list__box-item">
+          <div class="list__box-item--img"></div>
+          <div class="list__box-item--title">The Witcher</div>
+          <div class="list__box-item--author">Andrez Sapkowski</div>
+        </div>
+      </div>
+    </section>
+    <!-- PREMIUM END -->
+  </div>
+
+  <div class="wrapper">
+    <!-- NEWSLETTER START -->
+    <section id="newsletter" class="newsletter">
+      <h1 class="primaryHeading">Our Newsletter</h1>
+      <div class="newsletter__box">
+        <div class="newsletter__box-img">
+          <img src="./img/newsletter.png" alt="Newsletter" class="img">
+        </div>
+
+        <div class="newsletter__box-emailbox mailbox">
+          <label for="email">Your Email</label>
+          <div class="newsletter__box-emailbox--input mailbox__input">
+            <input type="text" placeholder="jdoe@jdoe.com">
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEWSLETTER END -->
+  </div>
+
+  <div class="full-wrapper">
+    <footer id="footer" class="footer">
+      <div class="footer__img">
+        <div class="footer__img--box">
+          <img src="./img/footer.png" alt="Footer" class="img">
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <h1 class="primaryHeading">Contact Us</h1>
+        <div class="mailbox">
+          <div class="mailbox__input">
+            <input type="text" placeholder="jdoe@jdoe.com">
+            <button type="submit">Send</button>
+          </div>
+        </div>
+        <p class="footer__contact--address">
+          South Sreepur Boral,<br>
+          Rajpur Sonarpur Municipality,<br>
+          South 24 PGS<br>
+          West Bengal, India<br>
+        </p>
+
+        <p class="footer__contact--email">
+          Email: ayaneshd@ayaneshdev.xyz
+        </p>
+      </div>
+
+      <ul class="footer__links">
+        <li>
+          <a href="#">
+            <svg class="footer__links--svg">
+              <use xlink:href="./svg/feather-sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="footer__links--svg">
+              <use xlink:href="./svg/feather-sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="footer__links--svg">
+              <use xlink:href="./svg/feather-sprite.svg#twitch"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="footer__links--svg">
+              <use xlink:href="./svg/feather-sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="footer__links--svg">
+              <use xlink:href="./svg/feather-sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </div>
 </body>
 </html>

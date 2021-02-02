@@ -43,6 +43,14 @@ body {
       padding: 0 2rem;
     }
   }
+
+  .full-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+    // margin: 0 auto !important;
+  }
 }
 
 /*========= HEADER ==========*/
@@ -50,6 +58,18 @@ body {
   height: 15rem;
   grid-column: 1 / -1;
   margin-bottom: 1.5rem;
+}
+
+#footer {
+  grid-column: 1 / -1;
+  padding: 7rem;
+  background-color: $footerTheme;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 0;
 }
 
 .header {
@@ -177,6 +197,67 @@ body {
       li > a.active {
         color: $themeColor;
       }
+    }
+  }
+}
+
+.footer {
+  &__img {
+    grid-column: 1 / 7;
+    position: relative;
+
+    &--box {
+      position: relative;
+      height: 40rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &__contact {
+    grid-column: 8 / -1;
+
+    .primaryHeading {
+      padding: 1rem 0 4rem 0;
+      font-size: 4.5rem;
+      text-transform: uppercase;
+    }
+
+    .mailbox {
+      margin-bottom: 2.5rem;
+
+      input, button {
+        border-radius: 0 !important;
+      }
+    }
+
+    &--address {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &--email {
+      font-weight: 600;
+      font-size: 2rem;
+    }
+  }
+
+  &__links {
+    margin: $sectionBreak 0 3rem 0;
+    grid-column: 4 / span 6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--svg {
+      width: 3.5rem;
+      height: 3.5rem;
+      fill: none;
+      stroke: #fff;
     }
   }
 }

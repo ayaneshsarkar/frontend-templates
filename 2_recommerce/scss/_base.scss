@@ -9,6 +9,11 @@ html {
   font-size: 62.5% !important;
 }
 
+*::selection {
+  background: $themeColor;
+  color: $primaryText;
+}
+
 a {
   text-decoration: none;
   color: inherit;

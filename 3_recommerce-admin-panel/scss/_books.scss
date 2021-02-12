@@ -1,0 +1,45 @@
+.books {
+  grid-column: 2 / 12;
+  padding: 0 2rem;
+  margin-bottom: $sectionBreak;
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: $titleGreyText;
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-gap: 9rem;
+
+
+    &--box {
+      background-color: $adminBookTheme;
+      height: 27rem;
+      border-radius: 2rem;
+      transition: all 0.2s ease-out;
+      margin-bottom: 1rem;
+      backface-visibility: hidden;
+      transform: scale(0.95);
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: $bXl;
+        transform: scale(1);
+        transform-origin: center;
+      }
+    }
+
+    &--title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $bookGreyText;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- NUNITO FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./css/app.css">
+  <title>Recommerce Admin Panel</title>
+</head>
+<body>
+  <nav class="sidebar">
+    <ul class="sidebar__menus">
+      <li class="sidebar__menu"></li>
+      <li class="sidebar__menu"></li>
+      <li class="sidebar__menu"></li>
+      <li class="sidebar__menu"></li>
+    </ul>
+  </nav>
+
+  <main class="full-wrapper main" id="main">
+    <div class="main__header">
+      <div class="main__title">
+        <div class="main__title--direction">
+          <a href="#">
+            <svg class="main__title--direction-icon">
+              <use xlink:href="./svg/feather-sprite.svg#chevron-left"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="main__title--content">
+          <h1>Dashboard</h1>
+        </div>
+      </div>
+
+      <div class="main__search">
+        <form class="main__search--form">
+          <input type="text" class="main__search--input" placeholder="Find The Book">
+          <button class="main__search--button">
+            <svg class="main__search--icon">
+              <use xlink:href="./svg/feather-sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <section id="books" class="books">
+      <h1 class="books__title">Your Books</h1>
+
+      <div class="books__content">
+        <div class="book__content">
+          <div class="books__content--box"></div>
+          <div class="books__content--title">Sword Of Destiny</div>
+        </div>
+
+        <div class="book__content">
+          <div class="books__content--box"></div>
+          <div class="books__content--title">Game Of Thrones</div>
+        </div>
+
+        <div class="book__content">
+          <div class="books__content--box"></div>
+          <div class="books__content--title">Blood Of Elves</div>
+        </div>
+
+        <div class="book__content">
+          <div class="books__content--box"></div>
+          <div class="books__content--title">Baptism Of Fire</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

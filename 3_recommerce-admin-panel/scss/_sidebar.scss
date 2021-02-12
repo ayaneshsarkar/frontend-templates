@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 100%;
+  background-color: $sidebarTheme;
+  box-shadow: $bXl;
+  //padding: 0 2rem;
+
+  &__menus {
+    padding-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: $sidebarMenuTheme;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+    box-shadow: none;
+  }
+}
